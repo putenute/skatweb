@@ -1,8 +1,17 @@
 Skatweb::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
   resources :skat_game_scores
 
   resources :users
-
+  
+  
+  
+  match '/contact', :to => 'pages#contact'
+  root :to => 'pages#home'
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
