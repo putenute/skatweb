@@ -1,0 +1,25 @@
+<h1>Listing skat_game_scores</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Score</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @skat_game_scores.each do |skat_game_score| %>
+  <tr>
+    <td><%= skat_game_score.user_id %></td>
+    <td><%= skat_game_score.score %></td>
+    <td><%= link_to 'Show', skat_game_score %></td>
+    <td><%= link_to 'Edit', edit_skat_game_score_path(skat_game_score) %></td>
+    <td><%= link_to 'Destroy', skat_game_score, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Skat game score', new_skat_game_score_path %>
