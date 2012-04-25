@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Skatweb::Application.config.secret_token = 'c5de30fc5b4d8158d4275a6b71e05081d2d5db15828b6ce3ec8e42b6dfff71b438140fc14573369426ed95e125124a948b45f1151f0f240df06cae31e15f8101'
+Skatweb::Application.config.secret_token = '1365e3e92a6011809fe3d8c602393eadc0096ecddf1c531ce0c0152495d5d58d675905e3faabb67c6e703fa3920b099f06cc655b3c6a4576a353fd6ab1cef7eb'
