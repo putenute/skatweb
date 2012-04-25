@@ -1,4 +1,10 @@
 Skatweb::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/help"
+
+  resources :scores
+
   resources :users
 
   # The priority is based upon order of creation:
